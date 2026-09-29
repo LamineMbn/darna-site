@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Darna</title>
+<style>
+  body { margin: 0; min-height: 100vh; background: #0A7D58; color: #fff; font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; padding: 24px 16px; text-align: center; }
+  h1 { font-size: 40px; margin: 0 0 8px; letter-spacing: -.02em; }
+  p { color: #E6F7EF; margin: 0; max-width: 380px; }
+</style>
+</head>
+<body>
+<main>
+  <img src="/logo.png" alt="" width="96" height="96" style="border-radius:26px;margin-bottom:16px">
+  <h1>Darna</h1>
+  <p id="p">Lists, chores and the family calendar. Shared by everyone at home. Coming soon.</p>
+</main>
+<script>
+  if ((navigator.language || '').toLowerCase().indexOf('fr') === 0) {
+    document.documentElement.lang = 'fr';
+    document.getElementById('p').textContent = 'Les listes, les tâches et le calendrier familial. Partagés par toute la maison. Bientôt disponible.';
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Darna</title>
+<style>
+  :root { --bg: #0A7D58; --text: #FFFFFF; --soft: #E6F7EF; --btn: #FFFFFF; --ink: #101318; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font: 17px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+  main { width: 100%; max-width: 420px; text-align: center; }
+  .logo { width: 88px; height: 88px; border-radius: 24px; margin-bottom: 20px; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 12px; letter-spacing: -.02em; }
+  p { color: var(--soft); margin: 0 0 24px; }
+  a.btn { display: block; background: var(--btn); color: var(--ink); text-decoration: none; font-weight: 700; padding: 16px; border-radius: 999px; margin-bottom: 16px; }
+  .small { font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="/logo.png" alt="" width="88" height="88">
+  <h1 id="title">You're invited to a home on Darna</h1>
+  <p id="body">Lists, chores and the family calendar, shared by everyone at home.</p>
+  <a class="btn" id="open" href="darna://">Open in Darna</a>
+  <p class="small" id="note">Don't have Darna yet? It's in early testing: ask whoever invited you for the test version, then open this link again.</p>
+</main>
+<script>
+  // Invite links are https://darna.mlb-techsolutions.com/join/<token>. With Darna installed, the
+  // phone opens the app directly; this page is for everyone else (and for other broken links).
+  var fr = (navigator.language || '').toLowerCase().indexOf('fr') === 0;
+  var m = location.pathname.match(/^\/join\/([^/?#]+)/);
+  var t = function (id, s) { document.getElementById(id).textContent = s; };
+  if (fr) {
+    document.documentElement.lang = 'fr';
+    t('title', 'Vous êtes invité·e dans une maison sur Darna');
+    t('body', 'Les listes, les tâches et le calendrier familial. Partagés par toute la maison.');
+    t('open', 'Ouvrir dans Darna');
+    t('note', 'Pas encore Darna ? L’app est en test : demandez la version de test à la personne qui vous a invité·e, puis rouvrez ce lien.');
+  }
+  if (m) {
+    document.getElementById('open').href = 'darna://join/' + encodeURIComponent(decodeURIComponent(m[1]));
+  } else {
+    t('title', fr ? 'Cette page n’existe pas' : 'This page doesn’t exist');
+    t('body', fr ? 'Le lien est peut-être incomplet.' : 'The link may be incomplete.');
+  }
+</script>
+</body>
+</html>
