@@ -11,8 +11,7 @@ from pathlib import Path
 SITE = Path(__file__).parent
 UPDATED = {'en': 'September 30, 2026', 'fr': '30 septembre 2026'}
 PUBLISHER = 'MLB Tech Solutions'
-# TODO(owner): the registered address of MLB Tech Solutions.
-ADDRESS = '[registered address to add]'
+ADDRESS = '14 rue Bausset, 75015 Paris, France'
 CONTACT = 'support@mlb-techsolutions.com'
 
 PAGES = {
