@@ -28,21 +28,24 @@ PAGES = {
 <li><strong>Your account:</strong> your email address (to send you sign-in codes), your name, your photo if you add one, your language and appearance settings, and whether you are 16 or older (asked once, so younger people join a parent’s home as a child).</li>
 <li><strong>What you add to a home:</strong> lists and items (with a price or a photo if you add them), tasks and who did them, calendar events and who attends, meals and recipes, expenses, splits, budgets and recurring bills, saved places, and the home’s activity feed.</li>
 <li><strong>Your location, only if you turn sharing on:</strong> your latest position, shown to the adults of your home, and arrivals at and departures from the places your home saved (with Darna+ place alerts). You can pause or stop sharing at any time; stopping deletes your position from our servers. Sharing while Darna is closed is a separate choice, and needs your phone’s “always” permission.</li>
+<li><strong>Your health, only if you turn it on:</strong> that you’re pregnant and, if you say so, not immune to toxoplasmosis; when you agreed; and in which of your homes you share food alerts. Darna uses it to show you a food guide and to flag food on lists and in recipes. Matching food against the advice happens on your phone: what gets flagged is never stored or sent to us.</li>
 <li><strong>Your phone, for notifications:</strong> a push token and this phone’s notification settings (topics, quiet hours, language and time zone), so we can tell you what happens at home.</li>
 <li><strong>Things that stay on your phone:</strong> your phone’s calendars (if you choose to show them next to the household’s) are read on the phone only and never sent to us. The camera is used to scan an invite QR code or take a photo you choose to add.</li>
 </ul>
-<p>Darna has no advertising, no analytics trackers and no session recording.</p>
+<p>Darna has no advertising, no analytics trackers and no session recording. Health data is never sent to analytics or crash-reporting services.</p>
 
 <h2>Why we use it</h2>
 <ul>
 <li>To provide the service you asked for: your account, your homes and what you share in them (performance of a contract).</li>
 <li>Location, notifications, camera and calendars only with your permission, which you can withdraw in your phone’s settings (consent).</li>
+<li>Your health profile only with your explicit consent, asked on a dedicated screen before anything is stored (GDPR article 9(2)(a)). You can withdraw it at any time in Settings → My health, by turning it off or deleting it; this doesn’t affect what happened before.</li>
 <li>To keep Darna safe, for example by limiting repeated sign-in and invite code attempts (legitimate interest).</li>
 </ul>
 
 <h2>Who can see it</h2>
 <ul>
 <li><strong>The members of each home</strong> see what is shared in that home. Money (expenses, balances, budgets) and other members’ positions are shown to adults only, never on a child’s phone.</li>
+<li><strong>Your health profile</strong> is seen by you only: nobody else in your homes, not even the admin. In the homes where you choose to share food alerts, members see notes on food (such as “Not recommended during pregnancy”), never who they’re for or any dates. In a small home, others may guess who an alert is for.</li>
 <li><strong>Our service providers,</strong> only to run Darna on our behalf:
   <ul>
   <li>Supabase (database, sign-in, photo storage) and PowerSync (keeping phones in sync), in the European Union.</li>
@@ -59,6 +62,7 @@ PAGES = {
 <ul>
 <li>Your account and what you added: until you delete your account (see below) or leave a home.</li>
 <li>Positions and place visits: 30 days at most, and positions are deleted as soon as you stop sharing.</li>
+<li>Your health profile: until you delete it in Settings → My health or delete your account. Leaving a home forgets whether you shared food alerts there.</li>
 <li>The activity feed: 30 days.</li>
 <li>Notifications waiting to be sent: 7 days. Security records (wrong invite codes): 1 day.</li>
 </ul>
@@ -94,21 +98,24 @@ PAGES = {
 <li><strong>Votre compte :</strong> votre adresse e-mail (pour vous envoyer les codes de connexion), votre nom, votre photo si vous en ajoutez une, vos réglages de langue et d’apparence, et si vous avez 16 ans ou plus (demandé une fois, pour que les plus jeunes rejoignent la maison d’un parent comme enfant).</li>
 <li><strong>Ce que vous ajoutez à une maison :</strong> listes et articles (avec un prix ou une photo si vous en ajoutez), tâches et qui les a faites, événements de l’agenda et qui y participe, repas et recettes, dépenses, partages, budgets et factures récurrentes, lieux enregistrés, et le fil d’activité de la maison.</li>
 <li><strong>Votre position, seulement si vous activez le partage :</strong> votre dernière position, visible par les adultes de votre maison, et vos arrivées et départs des lieux enregistrés par la maison (avec les alertes de lieux Darna+). Vous pouvez mettre en pause ou arrêter le partage à tout moment ; l’arrêter supprime votre position de nos serveurs. Partager quand Darna est fermée est un choix à part, qui demande l’autorisation « toujours » de votre téléphone.</li>
+<li><strong>Votre santé, seulement si vous l’activez :</strong> que vous êtes enceinte et, si vous l’indiquez, non immunisée contre la toxoplasmose ; la date de votre accord ; et dans lesquelles de vos maisons vous partagez les alertes alimentaires. Darna s’en sert pour vous montrer un guide alimentaire et signaler des aliments dans les listes et les recettes. La comparaison des aliments avec les conseils se fait sur votre téléphone : ce qui est signalé n’est jamais enregistré ni envoyé.</li>
 <li><strong>Votre téléphone, pour les notifications :</strong> un jeton push et les réglages de notification de ce téléphone (sujets, heures calmes, langue et fuseau horaire), pour vous prévenir de ce qui se passe à la maison.</li>
 <li><strong>Ce qui reste sur votre téléphone :</strong> les agendas de votre téléphone (si vous choisissez de les afficher à côté de celui de la maison) sont lus sur le téléphone uniquement et ne nous sont jamais envoyés. L’appareil photo sert à scanner un QR code d’invitation ou à prendre une photo que vous choisissez d’ajouter.</li>
 </ul>
-<p>Darna n’a ni publicité, ni traceurs d’analyse, ni enregistrement de session.</p>
+<p>Darna n’a ni publicité, ni traceurs d’analyse, ni enregistrement de session. Les données de santé ne sont jamais envoyées à des services de statistiques ou de rapports de plantage.</p>
 
 <h2>Pourquoi nous les utilisons</h2>
 <ul>
 <li>Pour fournir le service demandé : votre compte, vos maisons et ce que vous y partagez (exécution du contrat).</li>
 <li>La position, les notifications, l’appareil photo et les agendas seulement avec votre autorisation, que vous pouvez retirer dans les réglages du téléphone (consentement).</li>
+<li>Votre profil santé seulement avec votre consentement explicite, demandé sur un écran dédié avant tout enregistrement (article 9.2.a du RGPD). Vous pouvez le retirer à tout moment dans Réglages → Ma santé, en le désactivant ou en le supprimant ; cela ne remet pas en cause ce qui a eu lieu avant.</li>
 <li>Pour protéger Darna, par exemple en limitant les tentatives répétées de connexion ou de code d’invitation (intérêt légitime).</li>
 </ul>
 
 <h2>Qui peut les voir</h2>
 <ul>
 <li><strong>Les membres de chaque maison</strong> voient ce qui est partagé dans cette maison. L’argent (dépenses, soldes, budgets) et la position des autres membres ne sont montrés qu’aux adultes, jamais sur le téléphone d’un enfant.</li>
+<li><strong>Votre profil santé</strong> n’est visible que par vous : personne d’autre dans vos maisons, même pas l’administrateur. Dans les maisons où vous choisissez de partager les alertes alimentaires, les membres voient des notes sur les aliments (comme « Déconseillé pendant la grossesse »), jamais pour qui ni aucune date. Dans une petite maison, les autres peuvent deviner pour qui est l’alerte.</li>
 <li><strong>Nos prestataires,</strong> uniquement pour faire fonctionner Darna pour notre compte :
   <ul>
   <li>Supabase (base de données, connexion, stockage des photos) et PowerSync (synchronisation des téléphones), dans l’Union européenne.</li>
@@ -125,6 +132,7 @@ PAGES = {
 <ul>
 <li>Votre compte et ce que vous avez ajouté : jusqu’à la suppression de votre compte (voir plus bas) ou votre départ d’une maison.</li>
 <li>Positions et passages dans les lieux : 30 jours au plus, et les positions sont supprimées dès que vous arrêtez le partage.</li>
+<li>Votre profil santé : jusqu’à ce que vous le supprimiez dans Réglages → Ma santé ou que vous supprimiez votre compte. Quitter une maison efface votre choix de partage d’alertes pour cette maison.</li>
 <li>Le fil d’activité : 30 jours.</li>
 <li>Notifications en attente d’envoi : 7 jours. Traces de sécurité (codes d’invitation erronés) : 1 jour.</li>
 </ul>
@@ -236,7 +244,7 @@ PAGES = {
 
 <h2>What is deleted, and what stays</h2>
 <ul>
-<li><strong>Deleted:</strong> your account, profile and photo, your positions and place visits, your push registrations, and every home where nobody else has an account, with everything in it (lists, tasks, calendar, meals, budget, photos).</li>
+<li><strong>Deleted:</strong> your account, profile and photo, your health profile, your positions and place visits, your push registrations, and every home where nobody else has an account, with everything in it (lists, tasks, calendar, meals, budget, photos).</li>
 <li><strong>Stays in homes you share with others:</strong> what you added there (a list item, an event, an expense) so the rest of the household keeps its history, without your name.</li>
 <li>Copies in our providers’ backups are deleted when those backups expire, within 30 days.</li>
 </ul>
@@ -259,7 +267,7 @@ PAGES = {
 
 <h2>Ce qui est supprimé, et ce qui reste</h2>
 <ul>
-<li><strong>Supprimé :</strong> votre compte, votre profil et votre photo, vos positions et passages dans les lieux, vos inscriptions aux notifications, et chaque maison où personne d’autre n’a de compte, avec tout son contenu (listes, tâches, agenda, repas, budget, photos).</li>
+<li><strong>Supprimé :</strong> votre compte, votre profil et votre photo, votre profil santé, vos positions et passages dans les lieux, vos inscriptions aux notifications, et chaque maison où personne d’autre n’a de compte, avec tout son contenu (listes, tâches, agenda, repas, budget, photos).</li>
 <li><strong>Reste dans les maisons partagées avec d’autres :</strong> ce que vous y avez ajouté (un article, un événement, une dépense), pour que la maison garde son historique, sans votre nom.</li>
 <li>Les copies dans les sauvegardes de nos prestataires sont supprimées à l’expiration de ces sauvegardes, sous 30 jours.</li>
 </ul>
