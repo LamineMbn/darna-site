@@ -25,7 +25,7 @@ PAGES = {
 
 <h2>What Darna uses</h2>
 <ul>
-<li><strong>Your account:</strong> your email address (to send you sign-in codes), your name, your photo if you add one, your language and appearance settings, and whether you are 16 or older (asked once, so younger people join a parent’s home as a child).</li>
+<li><strong>Your account:</strong> your email address (to send you sign-in codes, or the one on your Google account if you sign in with Google), your name (at first the one on your Google account, if you sign in with Google), your photo if you add one, your language and appearance settings, and whether you are 16 or older (asked once, so younger people join a parent’s home as a child).</li>
 <li><strong>What you add to a home:</strong> lists and items (with a price or a photo if you add them), tasks and who did them, calendar events and who attends, meals and recipes, expenses, splits, budgets and recurring bills, saved places, and the home’s activity feed.</li>
 <li><strong>Your location, only if you turn sharing on:</strong> your latest position, shown to the adults of your home, and arrivals at and departures from the places your home saved (with Darna+ place alerts). You can pause or stop sharing at any time; stopping deletes your position from our servers. Sharing while Darna is closed is a separate choice, and needs your phone’s “always” permission.</li>
 <li><strong>Your health, only if you turn it on:</strong> that you’re pregnant and, if you say so, not immune to toxoplasmosis; when you agreed; and in which of your homes you share food alerts. Darna uses it to show you a food guide and to flag food on lists and in recipes. Matching food against the advice happens on your phone: what gets flagged is never stored or sent to us.</li>
@@ -50,6 +50,7 @@ PAGES = {
   <ul>
   <li>Supabase (database, sign-in, photo storage) and PowerSync (keeping phones in sync), in the European Union.</li>
   <li>Resend, which sends the sign-in code emails, in the United States.</li>
+  <li>Google, only if you choose to sign in with Google: it confirms who you are and gives Darna your name, email address and a link to your Google profile photo. Your Google account itself is covered by Google’s own privacy policy.</li>
   <li>Expo and Google Firebase Cloud Messaging, which deliver push notifications, in the United States.</li>
   <li>Mapbox (or OpenStreetMap), which serves the map images: your phone asks for the part of the map on screen, so they receive your IP address and that area, not who you are.</li>
   <li>GitHub, which hosts this website.</li>
@@ -95,7 +96,7 @@ PAGES = {
 
 <h2>Ce que Darna utilise</h2>
 <ul>
-<li><strong>Votre compte :</strong> votre adresse e-mail (pour vous envoyer les codes de connexion), votre nom, votre photo si vous en ajoutez une, vos réglages de langue et d’apparence, et si vous avez 16 ans ou plus (demandé une fois, pour que les plus jeunes rejoignent la maison d’un parent comme enfant).</li>
+<li><strong>Votre compte :</strong> votre adresse e-mail (pour vous envoyer les codes de connexion, ou celle de votre compte Google si vous vous connectez avec Google), votre nom (au départ celui de votre compte Google, si vous vous connectez avec Google), votre photo si vous en ajoutez une, vos réglages de langue et d’apparence, et si vous avez 16 ans ou plus (demandé une fois, pour que les plus jeunes rejoignent la maison d’un parent comme enfant).</li>
 <li><strong>Ce que vous ajoutez à une maison :</strong> listes et articles (avec un prix ou une photo si vous en ajoutez), tâches et qui les a faites, événements de l’agenda et qui y participe, repas et recettes, dépenses, partages, budgets et factures récurrentes, lieux enregistrés, et le fil d’activité de la maison.</li>
 <li><strong>Votre position, seulement si vous activez le partage :</strong> votre dernière position, visible par les adultes de votre maison, et vos arrivées et départs des lieux enregistrés par la maison (avec les alertes de lieux Darna+). Vous pouvez mettre en pause ou arrêter le partage à tout moment ; l’arrêter supprime votre position de nos serveurs. Partager quand Darna est fermée est un choix à part, qui demande l’autorisation « toujours » de votre téléphone.</li>
 <li><strong>Votre santé, seulement si vous l’activez :</strong> que vous êtes enceinte et, si vous l’indiquez, non immunisée contre la toxoplasmose ; la date de votre accord ; et dans lesquelles de vos maisons vous partagez les alertes alimentaires. Darna s’en sert pour vous montrer un guide alimentaire et signaler des aliments dans les listes et les recettes. La comparaison des aliments avec les conseils se fait sur votre téléphone : ce qui est signalé n’est jamais enregistré ni envoyé.</li>
@@ -120,6 +121,7 @@ PAGES = {
   <ul>
   <li>Supabase (base de données, connexion, stockage des photos) et PowerSync (synchronisation des téléphones), dans l’Union européenne.</li>
   <li>Resend, qui envoie les e-mails de code de connexion, aux États-Unis.</li>
+  <li>Google, seulement si vous choisissez de vous connecter avec Google : il confirme votre identité et transmet à Darna votre nom, votre adresse e-mail et un lien vers votre photo de profil Google. Votre compte Google lui-même relève de la politique de confidentialité de Google.</li>
   <li>Expo et Google Firebase Cloud Messaging, qui acheminent les notifications push, aux États-Unis.</li>
   <li>Mapbox (ou OpenStreetMap), qui fournit les images de la carte : votre téléphone demande la partie de carte affichée, ils reçoivent donc votre adresse IP et cette zone, pas votre identité.</li>
   <li>GitHub, qui héberge ce site.</li>
@@ -167,7 +169,7 @@ PAGES = {
 
 <h2>Your account</h2>
 <ul>
-<li>You sign in with a code sent to your email address. Keep access to that address to yourself.</li>
+<li>You sign in with a code sent to your email address, or with your Google account. Keep access to them to yourself.</li>
 <li>Under 16, you join a home created by a parent, as a child.</li>
 <li>You are responsible for what you add to Darna. Only add photos and content you have the right to share, and nothing illegal or hurtful.</li>
 <li>The admin of a home can invite and remove members and change their roles.</li>
@@ -201,7 +203,7 @@ PAGES = {
 
 <h2>Votre compte</h2>
 <ul>
-<li>Vous vous connectez avec un code envoyé à votre adresse e-mail. Gardez l’accès à cette adresse pour vous.</li>
+<li>Vous vous connectez avec un code envoyé à votre adresse e-mail, ou avec votre compte Google. Gardez-en l’accès pour vous.</li>
 <li>Avant 16 ans, vous rejoignez une maison créée par un parent, comme enfant.</li>
 <li>Vous êtes responsable de ce que vous ajoutez à Darna. N’ajoutez que des photos et contenus que vous avez le droit de partager, et rien d’illégal ou de blessant.</li>
 <li>L’administrateur d’une maison peut inviter et retirer des membres et changer leurs rôles.</li>
