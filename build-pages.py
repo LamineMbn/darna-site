@@ -9,7 +9,7 @@ what Darna collects, where it's stored or how long it's kept changes.
 from pathlib import Path
 
 SITE = Path(__file__).parent
-UPDATED = {'en': 'September 30, 2026', 'fr': '30 septembre 2026'}
+UPDATED = {'en': 'October 20, 2026', 'fr': '20 octobre 2026'}
 PUBLISHER = 'MLB Tech Solutions'
 ADDRESS = '14 rue Bausset, 75015 Paris, France'
 CONTACT = 'support@mlb-techsolutions.com'
@@ -26,13 +26,14 @@ PAGES = {
 <h2>What Darna uses</h2>
 <ul>
 <li><strong>Your account:</strong> your email address (to send you sign-in codes, or the one on your Google account if you sign in with Google), your name (at first the one on your Google account, if you sign in with Google), your photo if you add one, your language and appearance settings, and whether you are 16 or older (asked once, so younger people join a parent’s home as a child).</li>
+<li><strong>Loyalty cards</strong> you add: the store, the card’s name and number, its code type and color, and whether it is shared with your home or only yours. Cards shared with the home are visible to its members; an “Only me” card is stored on our servers but only you can see it, on your own phones. They are deleted with the home, and your “Only me” cards when you leave it or delete your account.</li>
 <li><strong>What you add to a home:</strong> lists and items (with a price or a photo if you add them), tasks and who did them, calendar events and who attends, meals and recipes, expenses, splits, budgets and recurring bills, saved places, and the home’s activity feed.</li>
 <li><strong>Your location, only if you turn sharing on:</strong> your latest position, shown to the adults of your home, and arrivals at and departures from the places your home saved (with Darna+ place alerts). You can pause or stop sharing at any time; stopping deletes your position from our servers. Sharing while Darna is closed is a separate choice, and needs your phone’s “always” permission.</li>
 <li><strong>Your health, only if you turn it on:</strong> that you’re pregnant and, if you say so, not immune to toxoplasmosis; when you agreed; and in which of your homes you share food alerts. Darna uses it to show you a food guide and to flag food on lists and in recipes. Matching food against the advice happens on your phone: what gets flagged is never stored or sent to us.</li>
 <li><strong>Your phone, for notifications:</strong> a push token and this phone’s notification settings (topics, quiet hours, language and time zone), so we can tell you what happens at home.</li>
 <li><strong>Things that stay on your phone:</strong> your phone’s calendars (if you choose to show them next to the household’s) are read on the phone only and never sent to us. The camera is used to scan an invite QR code or take a photo you choose to add.</li>
 </ul>
-<p>Darna has no advertising, no analytics trackers and no session recording. Health data is never sent to analytics or crash-reporting services.</p>
+<p>Darna has no advertising, no analytics trackers and no session recording. Health data and loyalty card numbers are never sent to analytics or crash-reporting services.</p>
 
 <h2>Why we use it</h2>
 <ul>
@@ -63,6 +64,7 @@ PAGES = {
 <ul>
 <li>Your account and what you added: until you delete your account (see below) or leave a home.</li>
 <li>Positions and place visits: 30 days at most, and positions are deleted as soon as you stop sharing.</li>
+<li>Loyalty cards: until they are deleted, with the home, or (for “Only me” cards) when you leave the home or delete your account.</li>
 <li>Your health profile: until you delete it in Settings → My health or delete your account. Leaving a home forgets whether you shared food alerts there.</li>
 <li>The activity feed: 30 days.</li>
 <li>Notifications waiting to be sent: 7 days. Security records (wrong invite codes): 1 day.</li>
@@ -97,13 +99,14 @@ PAGES = {
 <h2>Ce que Darna utilise</h2>
 <ul>
 <li><strong>Votre compte :</strong> votre adresse e-mail (pour vous envoyer les codes de connexion, ou celle de votre compte Google si vous vous connectez avec Google), votre nom (au départ celui de votre compte Google, si vous vous connectez avec Google), votre photo si vous en ajoutez une, vos réglages de langue et d’apparence, et si vous avez 16 ans ou plus (demandé une fois, pour que les plus jeunes rejoignent la maison d’un parent comme enfant).</li>
+<li><strong>Les cartes de fidélité</strong> que vous ajoutez : le magasin, le nom et le numéro de la carte, son type de code et sa couleur, et si elle est partagée avec votre maison ou seulement à vous. Les cartes partagées sont visibles par les membres de la maison ; une carte « Juste moi » est conservée sur nos serveurs, mais vous seul pouvez la voir, sur vos propres téléphones. Elles sont supprimées avec la maison, et vos cartes « Juste moi » quand vous la quittez ou supprimez votre compte.</li>
 <li><strong>Ce que vous ajoutez à une maison :</strong> listes et articles (avec un prix ou une photo si vous en ajoutez), tâches et qui les a faites, événements de l’agenda et qui y participe, repas et recettes, dépenses, partages, budgets et factures récurrentes, lieux enregistrés, et le fil d’activité de la maison.</li>
 <li><strong>Votre position, seulement si vous activez le partage :</strong> votre dernière position, visible par les adultes de votre maison, et vos arrivées et départs des lieux enregistrés par la maison (avec les alertes de lieux Darna+). Vous pouvez mettre en pause ou arrêter le partage à tout moment ; l’arrêter supprime votre position de nos serveurs. Partager quand Darna est fermée est un choix à part, qui demande l’autorisation « toujours » de votre téléphone.</li>
 <li><strong>Votre santé, seulement si vous l’activez :</strong> que vous êtes enceinte et, si vous l’indiquez, non immunisée contre la toxoplasmose ; la date de votre accord ; et dans lesquelles de vos maisons vous partagez les alertes alimentaires. Darna s’en sert pour vous montrer un guide alimentaire et signaler des aliments dans les listes et les recettes. La comparaison des aliments avec les conseils se fait sur votre téléphone : ce qui est signalé n’est jamais enregistré ni envoyé.</li>
 <li><strong>Votre téléphone, pour les notifications :</strong> un jeton push et les réglages de notification de ce téléphone (sujets, heures calmes, langue et fuseau horaire), pour vous prévenir de ce qui se passe à la maison.</li>
 <li><strong>Ce qui reste sur votre téléphone :</strong> les agendas de votre téléphone (si vous choisissez de les afficher à côté de celui de la maison) sont lus sur le téléphone uniquement et ne nous sont jamais envoyés. L’appareil photo sert à scanner un QR code d’invitation ou à prendre une photo que vous choisissez d’ajouter.</li>
 </ul>
-<p>Darna n’a ni publicité, ni traceurs d’analyse, ni enregistrement de session. Les données de santé ne sont jamais envoyées à des services de statistiques ou de rapports de plantage.</p>
+<p>Darna n’a ni publicité, ni traceurs d’analyse, ni enregistrement de session. Les données de santé et les numéros de cartes de fidélité ne sont jamais envoyés à des services de statistiques ou de rapports de plantage.</p>
 
 <h2>Pourquoi nous les utilisons</h2>
 <ul>
@@ -134,6 +137,7 @@ PAGES = {
 <ul>
 <li>Votre compte et ce que vous avez ajouté : jusqu’à la suppression de votre compte (voir plus bas) ou votre départ d’une maison.</li>
 <li>Positions et passages dans les lieux : 30 jours au plus, et les positions sont supprimées dès que vous arrêtez le partage.</li>
+<li>Cartes de fidélité : jusqu’à leur suppression, avec la maison, ou (pour les cartes « Juste moi ») quand vous quittez la maison ou supprimez votre compte.</li>
 <li>Votre profil santé : jusqu’à ce que vous le supprimiez dans Réglages → Ma santé ou que vous supprimiez votre compte. Quitter une maison efface votre choix de partage d’alertes pour cette maison.</li>
 <li>Le fil d’activité : 30 jours.</li>
 <li>Notifications en attente d’envoi : 7 jours. Traces de sécurité (codes d’invitation erronés) : 1 jour.</li>
@@ -246,8 +250,8 @@ PAGES = {
 
 <h2>What is deleted, and what stays</h2>
 <ul>
-<li><strong>Deleted:</strong> your account, profile and photo, your health profile, your positions and place visits, your push registrations, and every home where nobody else has an account, with everything in it (lists, tasks, calendar, meals, budget, photos).</li>
-<li><strong>Stays in homes you share with others:</strong> what you added there (a list item, an event, an expense) so the rest of the household keeps its history, without your name.</li>
+<li><strong>Deleted:</strong> your account, profile and photo, your health profile, your positions and place visits, your “Only me” loyalty cards, your push registrations, and every home where nobody else has an account, with everything in it (lists, tasks, calendar, meals, budget, photos).</li>
+<li><strong>Stays in homes you share with others:</strong> what you added there (a list item, an event, an expense, a loyalty card shared with the home, shown as “Added by a former member”) so the rest of the household keeps its history, without your name.</li>
 <li>Copies in our providers’ backups are deleted when those backups expire, within 30 days.</li>
 </ul>
 <p>Want a copy first? Settings → <strong>Export my data</strong>.</p>
@@ -269,8 +273,8 @@ PAGES = {
 
 <h2>Ce qui est supprimé, et ce qui reste</h2>
 <ul>
-<li><strong>Supprimé :</strong> votre compte, votre profil et votre photo, votre profil santé, vos positions et passages dans les lieux, vos inscriptions aux notifications, et chaque maison où personne d’autre n’a de compte, avec tout son contenu (listes, tâches, agenda, repas, budget, photos).</li>
-<li><strong>Reste dans les maisons partagées avec d’autres :</strong> ce que vous y avez ajouté (un article, un événement, une dépense), pour que la maison garde son historique, sans votre nom.</li>
+<li><strong>Supprimé :</strong> votre compte, votre profil et votre photo, votre profil santé, vos positions et passages dans les lieux, vos cartes de fidélité « Juste moi », vos inscriptions aux notifications, et chaque maison où personne d’autre n’a de compte, avec tout son contenu (listes, tâches, agenda, repas, budget, photos).</li>
+<li><strong>Reste dans les maisons partagées avec d’autres :</strong> ce que vous y avez ajouté (un article, un événement, une dépense, une carte de fidélité partagée avec la maison, affichée « Ajoutée par un ancien membre »), pour que la maison garde son historique, sans votre nom.</li>
 <li>Les copies dans les sauvegardes de nos prestataires sont supprimées à l’expiration de ces sauvegardes, sous 30 jours.</li>
 </ul>
 <p>Vous voulez une copie avant ? Réglages → <strong>Exporter mes données</strong>.</p>
